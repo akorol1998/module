@@ -1,0 +1,63 @@
+.box{
+	background-color: red;
+	position: relative;
+	width: 50px;
+	height: 50px;
+	animation-name: slide;
+	animation-duration: 3s;
+	animation-iteration-count: infinite;
+	animation-fill-mode: forwards;
+}
+
+.box2{
+	position: relative;
+	background-color: blue;
+	width: 50px;
+	height: 50px;
+	animation-name: slidde;
+	animation-duration: 3s;
+	animation-iteration-count: infinite;
+	animation-fill-mode: forwards;
+}
+
+
+@keyframes slide{
+   0%{
+   	left:0px; top:0px;
+     transform: rotate(0);
+   }
+   35%{ left:1200px; top:600px;}
+     /*transform: rotate(45deg);*/
+   50%{
+   	/*left:100px; top:100px;*/
+     /*transform: rotate(90deg);*/
+   }
+   75%{
+   	/*left:100px; top:100px;*/
+     /*transform: rotate(135deg);*/
+   }
+   100%{
+   	/*left:100px; top:100px;*/
+     /*transform: rotate(180deg);*/
+   }
+ }
+
+ @keyframes slidde{
+   0%{
+   	left:0px; top:600px;
+     transform: rotate(0);
+   }
+   35%{
+   	left:1200px; top:0px;
+     transform: rotate(45deg);
+   }
+   50%{
+     transform: rotate(90deg);
+   }
+   75%{
+     transform: rotate(135deg);
+   }
+   100%{
+     transform: rotate(180deg);
+   }
+ }
